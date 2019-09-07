@@ -25,9 +25,6 @@
     display: grid;
     grid-template-rows: 1.5fr 1.75fr 3.5fr 1.75fr 1.5fr;
 }
-.empty{
-    /* border: 1px solid red; */
-}
 .strip-top{
     /* border: 1px solid red; */
     margin: 0%;
