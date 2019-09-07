@@ -5,6 +5,7 @@
 ###Features
                     
 Note that, this web-base aplication have features such as
--Message/Chat box
--Spotify Music player
--Timer
+                    
+-Message/Chat box                    
+-Spotify Music player                    
+-Timer                    
