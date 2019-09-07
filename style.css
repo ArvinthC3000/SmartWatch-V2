@@ -1,0 +1,169 @@
+.main{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100wh;
+}
+.left h1{
+    align-items: center;
+    background-color: #1890F0;
+    display: flex;
+    color: white;
+    height: 100vh;
+    justify-content: center;
+    font-weight: 500
+}
+.left h1 span{
+    color: black;
+}
+.right{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+.workspace{
+    display: grid;
+    grid-template-rows: 1.5fr 1.75fr 3.5fr 1.75fr 1.5fr;
+}
+.empty{
+    border: 1px solid red;
+}
+.strip-top{
+    border: 1px solid red;
+    margin: 0%;
+    padding: 0 20%;
+}
+.strip-bottom{
+    border: 1px solid red;
+    margin: 0%;
+    padding: 0 20%;
+}
+.panel{
+    border: 10px solid #4E4F53;
+    border-radius: 15%;
+    background-color: black;
+    padding: -15px;
+}
+.row{
+    display: block;
+    height: 100%;
+}
+.container-fluid .row .col-left{
+    visibility: hidden;
+    height: 10%;
+    font-size: .9em;
+    color: #1890F0;
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.container-fluid .row .col-right{
+    visibility: hidden;;
+    height: 10%;
+    font-size: .9em;
+    color: #1890F0;
+    padding: 0;
+    padding-top: 5px;
+    text-align: end;
+    padding-right: 10px;
+}
+.my-strip-container-top{
+    display: flex;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%; 
+    width: 100%;
+    height: 75%;
+    background-color: black;
+    /* margin-top: 50px; */
+    
+    align-items: flex-end
+}
+.my-strip-container-bottom{
+    width: 100%;
+    height: 75%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    background-color: black;
+    /* margin-bottom: 50px; */
+}
+#container{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    /* margin-top: -24.389px; */
+    /* background-color: white; */
+}
+#initialDisplay{
+    /* position: absolute; */
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    justify-content: left;
+    text-align: center;
+    font-size: 2em;
+    justify-items: center;
+    /* width: 181%; */
+    background-color: aliceblue;
+    margin: 0;
+}
+#salutation{
+    font-size: .5em;
+}
+.my-container-fluid{
+    height: 100%;
+}
+#goHome{
+    display: none;
+    height: 10%;
+    width:100%;
+    color: #1890F0;
+    margin-top: -30px;
+    padding-left: 12.5%;
+}
+#iconPage{
+    display: none;
+    color: darkcyan;
+    size: 5em;
+    width: 100%;
+    height: 150%;
+    padding: 0;
+    margin: 0%;
+ 
+}
+#messageScreen{
+    display: none;
+    width: 100%;
+    height: 100%;
+    /* margin-block-end: -15% */
+    color: aliceblue;
+    
+}
+#icon{
+    padding: 50% 0% 50% 0%;
+    height: 206px;
+    align-items: center;
+    /* margin-top: 24px; */
+}
+.myMessageFlex{
+    display: none;
+    /* background-color: #1890F0; */
+    border : 2px solid red;
+    margin: 10%;
+    width: auto;
+    height: auto;
+}
+.myMessageInfo{
+    height: 50px;
+    align-items: center;
+    align-content: stretch;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-origin: padding-box;
+    background-color: #1890F0;
+    text-align: center;
+    text-justify: auto;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+  
