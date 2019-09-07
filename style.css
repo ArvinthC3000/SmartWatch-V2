@@ -90,6 +90,31 @@
     margin-top: -24.389px;
     /* background-color: white; */
 }
+.my-container-fluid{
+    height: 100%;
+}
+.myMessageFlex{
+    display: flex;
+    /* background-color: #1890F0; */
+    border : 2px solid red;
+    margin: 10%;
+    width: auto;
+    height: auto;
+}
+.myMessageInfo{
+    height: 50px;
+    align-items: center;
+    align-content: stretch;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-origin: padding-box;
+    background-color: #1890F0;
+    text-align: center;
+    text-justify: auto;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
 #initialDisplay{
     /* position: absolute; */
     background-color: white;
@@ -106,9 +131,7 @@
 #salutation{
     font-size: .5em;
 }
-.my-container-fluid{
-    height: 100%;
-}
+
 #goHome{
     display: none;
     height: 10%;
@@ -145,29 +168,7 @@
 #goHome{
     font-size: 1.5em;
 }
-.myMessageFlex{
-    display: flex;
-    /* background-color: #1890F0; */
-    border : 2px solid red;
-    margin: 10%;
-    width: auto;
-    height: auto;
-}
-.myMessageInfo{
-    height: 50px;
-    align-items: center;
-    align-content: stretch;
-    padding-left: 10%;
-    padding-right: 10%;
-    background-origin: padding-box;
-    background-color: #1890F0;
-    text-align: center;
-    text-justify: auto;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    margin-bottom: 5%;
-}
-  
+
 #spotify{
     display: none;
     scroll-behavior: auto;
