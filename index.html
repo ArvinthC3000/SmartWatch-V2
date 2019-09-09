@@ -39,7 +39,7 @@ Note that, this web-base aplication have features such as
                     <div id="notificationBar" class="col-7 col-left">Notification</div>
                     <div id="time" class="col-5 col-right">Time</div>
                     <div class="col-12" id="container">
-                            <div  class="d-flex flex-column justify-content-center my-container-fluid">  <!--style="background-color: blueviolet"-->
+                            <div  class="d-flex flex-column justify-content-center align-content-center my-container-fluid">  <!--style="background-color: blueviolet"-->
                                 <div onclick="screen()" id="initialDisplay" class="container-fluid">
                                     <div id="dispTime"></div>
                                 </div>
@@ -53,31 +53,70 @@ Note that, this web-base aplication have features such as
                                         <div id="icon" class="d-flex flex-row justify-content-around align-content-center">
                                             <div id="message" onclick="message()" ><i class="far fa-comment-dots"></i></div>
                                             <div id="music" onclick="music()"><i class="fab fa-spotify"></i></div>
-                                            <div id="timer" onclick="timer()"><i class="far fa-clock"></i></div>
+                                            <div id="timer" onclick="timerScr()"><i class="far fa-clock"></i></div>
                                         </div>
                                     </div>
                                 </div>
                             <!-- Part 2 ends here -->
 
                             <!-- Part 3 starts here -->
-                                <div id="messageScreen" class="flex-column flex-grow justify-content-center align-content-center align-text-center" >
-                                    <div class="myMessageInfo justify-content-center">No new messages</div>
-                                    <div class="myMessageInfo">No new messages</div>
-                                    <div class="myMessageInfo">No new messages</div>
+                                <div id="messageScreen" class="flex-column flex-grow justify-content-center align-content-start align-text-center">
+                                    <div  onclick="chat1()" class="myMessageInfo">Hate:Hey...</div>
+                                    <div onclick="chat2()" class="myMessageInfo">Dimples: You...</div>
+                                    <div onclick="chat3()" class="myMessageInfo">Natpu:Da....</div>
                                     <!-- <div class="myMessageFlex" style="color: aliceblue">aioew</div> -->
                                 </div>
+                                <div id="mes1"></div>
+                                <div id="mes3"></div>
+                                <div id="mes2"></div>
                             <!-- Part 3 ends here -->
 
                             <!-- Part 4 starts here -->
-                                <div id="spotify"><iframe src="https://embed.spotify.com/?uri=spotify:playlist:0rT55KEC9L4sFqCVomJdYQ" width="100%"
+                                <div id="spotify"><iframe src="https://embed.spotify.com/?uri=spotify:playlist:0rT55KEC9L4sFqCVomJdYQ" width="200px"
                                     height="100%" frameborder="0" allowtransparency="true"
-                                    allow="encrypted-media"></iframe
-                                ></div>
-                            
+                                    allow="encrypted-media"></iframe>
+                              </div>
+
+                                <!-- div#message -->
+                            <!-- Part 4 ends here -->
+
+
+                            <!-- Part 5 starts here -->
+                                <div id="timerScreen" class="justify-content-center align-content-center align-item-center">
+                                    <div onclick="" class="row justify-content-center align-content-center align-item-center" id="clockdiv">
+                                        
+                                            <div>
+                                                <span class="hours" style="width:auto">00 :</span>
+                                                <!-- <div id="hourTitle" class="smalltext">Minute</div> -->
+                                                </div>
+                                        
+                                        
+                                            <div>
+                                                <span id="minute" class="minutes">00 :</span>
+                                                <!-- <div id="minuteTitle" class="smalltext">Second</div> -->
+                                                </div>
+                                        
+                                        
+                                            <div>
+                                                <span id="second" class="seconds">00</span>
+                                                <!-- <div id="secondTitle" class="smalltext">Millisec</div> -->
+                                                </div>
+                                        
+                                    </div> 
+                                    <div class="row justify-content-center">
+                                        <div id="pauseButton" class="col">
+                                                <i class="fa fa-refresh" id="clear"></i>
+                                        </div>
+                                        <div id="pauseButton" class="col">
+                                                <i class="fa fa-hourglass" id="lap"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                               <!-- Part 5 ends here -->
                             </div>
                             
                     </div>
-                    <!-- Part 4 ends here -->
+                    
                     
                     
                     <div class="container-fluid" >
