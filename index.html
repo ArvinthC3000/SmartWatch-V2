@@ -82,8 +82,8 @@ Note that, this web-base aplication have features such as
 
 
                             <!-- Part 5 starts here -->
-                                <div id="timerScreen" class="justify-content-center align-content-center align-item-center">
-                                    <div onclick="" class="d-flex flex-row justify-content-center align-content-center align-item-center" id="clockdiv">
+                                <div id="timerScreen" class="flex-column  justify-content-start align-item-center">
+                                    <div onclick="" class="d-flex flex-row justify-content-center " id="clockdiv">
                                         
                                             <div class="d-flex flex-column justify-content-center align-item-center" id="hours">
                                                 00 :
@@ -103,15 +103,21 @@ Note that, this web-base aplication have features such as
                                             </div>
                                         
                                     </div> 
-                                    <div class="row justify-content-center">
-                                        <div id="pauseButton" class="col">
-                                                <i class="fa fa-refresh" id="clear"></i>
+                                    <div class="d-flex flex-row align-item-center" id="timerButtons">
+                                        <div id="startButton" class="col">
+                                            <i class="fas fa-play"></i>
                                         </div>
+                                        
                                         <div id="pauseButton" class="col">
-                                                <i class="fa fa-refresh" id="clear"></i>
+                                            <i class="fas fa-pause"></i>
                                         </div>
-                                        <div id="pauseButton" class="col">
-                                                <i class="fa fa-hourglass" id="lap"></i>
+
+                                        <div id="resetButton" class="col">
+                                            <i class="fa fa-refresh" id="clear"></i>
+                                        </div>
+
+                                        <div id="lapButton" class="col">
+                                            <i class="fa fa-hourglass" id="lap"></i>
                                         </div>
                                     </div>
                                 </div>

@@ -103,7 +103,7 @@ function timerScr(){
     screen();
     console.log('her');
     document.getElementById('iconPage').style.display = 'none';
-    document.getElementById('timerScreen').style.display = 'block';
+    document.getElementById('timerScreen').style.display = 'flex';
 }
 
 function add() {
