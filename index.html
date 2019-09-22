@@ -83,27 +83,30 @@ Note that, this web-base aplication have features such as
 
                             <!-- Part 5 starts here -->
                                 <div id="timerScreen" class="justify-content-center align-content-center align-item-center">
-                                    <div onclick="" class="row justify-content-center align-content-center align-item-center" id="clockdiv">
+                                    <div onclick="" class="d-flex flex-row justify-content-center align-content-center align-item-center" id="clockdiv">
                                         
-                                            <div>
-                                                <span class="hours" style="width:auto">00 :</span>
+                                            <div class="d-flex flex-column justify-content-center align-item-center" id="hours">
+                                                00 :
                                                 <!-- <div id="hourTitle" class="smalltext">Minute</div> -->
-                                                </div>
+                                            </div>
                                         
                                         
-                                            <div>
-                                                <span id="minute" class="minutes">00 :</span>
+                                            <div class="d-flex flex-column justify-content-center align-item-center" id="minute">
+                                                00 :
                                                 <!-- <div id="minuteTitle" class="smalltext">Second</div> -->
-                                                </div>
+                                            </div>
                                         
                                         
-                                            <div>
-                                                <span id="second" class="seconds">00</span>
+                                            <div class="d-flex flex-column justify-content-center align-item-center" id="second">
+                                                00
                                                 <!-- <div id="secondTitle" class="smalltext">Millisec</div> -->
-                                                </div>
+                                            </div>
                                         
                                     </div> 
                                     <div class="row justify-content-center">
+                                        <div id="pauseButton" class="col">
+                                                <i class="fa fa-refresh" id="clear"></i>
+                                        </div>
                                         <div id="pauseButton" class="col">
                                                 <i class="fa fa-refresh" id="clear"></i>
                                         </div>
