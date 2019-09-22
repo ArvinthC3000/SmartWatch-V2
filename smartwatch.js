@@ -18,6 +18,7 @@ function screen(){
     document.getElementById('mes1').style.display = 'none';
     document.getElementById('mes2').style.display = 'none';
     document.getElementById('mes3').style.display = 'none';
+    document.getElementById('timerScreen').style.display = 'none';
     initialDisplay();
 }
 function initialDisplay(){

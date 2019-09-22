@@ -1,7 +1,7 @@
 .main{
     /* border: 1px solid black; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .5fr 1fr;
     height: 100%;
     width: 100wh;
 }
@@ -220,7 +220,8 @@
 #timerScreen{
     display: none;
     height: 80%;
-    background-color: #1890F0;
+    padding:0  2rem;
+    /* background-color: #1890F0; */
     width: 80%;
     color: aliceblue;
     grid-template-columns: .5fr 1fr;
@@ -228,9 +229,9 @@
 #clockdiv{
     margin: 0%;
     padding: 0%;
-    width: 80px;
-    height:80px;
-    border: 2px solid gray;
+    width: 7rem;
+    height:7rem;
+    border: 2px solid rgb(61, 61, 61);
     border-radius: 50%;
     background-color: white;
     color: black;
