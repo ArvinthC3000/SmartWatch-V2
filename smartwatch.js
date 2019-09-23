@@ -1,6 +1,6 @@
 let messageArray =[
-    {id:1, sender:'Hate',message:'Hey Batsy...WRU?'},
-    {id:2, sender:'Dimples',message:'You forgotyour breakfast again?'},
+    {id:1, sender:'Hate',message:'Hlo sir...WRU?'},
+    {id:2, sender:'Dimples',message:'You forgot your breakfast again?'},
     {id:3, sender:'Natpu',message:'Da...Tmrw I\'ll be leaving Chennai'},
     {id:4, sender:'Stranger',message:'You getting him redhanded was lit AF'},
     {id:5, sender:'Chella',message:'Dei butter-u,I\'ll call u tmrw da'}
@@ -106,16 +106,19 @@ function timerScr(){
     document.getElementById('timerScreen').style.display = 'flex';
 }
 
-function add() {
+
 
     let h = document.getElementsByClassName('hours')[0];
     let m = document.getElementById('minute');
     let s = document.getElementById('second');
-    let start = document.getElementById('start');
-    let stop = document.getElementById('stop');
-    let clear = document.getElementById('clear');
+    // let start = document.getElementById('start');
+    // let stop = document.getElementById('stop');
+    // let clear = document.getElementById('clear');
     let seconds = 0, minutes = 0, hours = 0;
     let t;
+    function add() {
+        document.getElementById('startButton').style.display = 'none';
+        document.getElementById('pauseButton').style.display = 'block';
     seconds++;
     if (seconds >= 60) {
         seconds = 0;
@@ -124,19 +127,25 @@ function add() {
             minutes = 0;
             hours++;
         }
+
     }
-    
+    timer();
     h = hours ? (hours > 9 ? hours : "0" + hours) : "00";
     m = minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00";
     s = seconds > 9 ? seconds : "0" + seconds;
-    console.log(s);
+    // console.log(s);
 
-    timer();
-    document.getElementById('clockdiv').innerHTML=h+':'+m+':'+s;
+    
+    document.getElementById('hours').innerHTML=h+":";
+    document.getElementById('minute').innerHTML=m+":";
+    document.getElementById('second').innerHTML=s;
 }
 function timer() {
     t = setTimeout(add, 10);
 }
-
+function stopTimer(){
+    document.getElementById('pauseButton').style.display = 'none';
+    document.getElementById('startButton').style.display = 'block';
+}
 
 

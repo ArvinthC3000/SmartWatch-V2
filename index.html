@@ -61,7 +61,7 @@ Note that, this web-base aplication have features such as
 
                             <!-- Part 3 starts here -->
                                 <div id="messageScreen" class="flex-column flex-grow justify-content-center align-content-start align-text-center">
-                                    <div  onclick="chat1()" class="myMessageInfo">Hate:Hey...</div>
+                                    <div  onclick="chat1()" class="myMessageInfo">Hate:Hlo...</div>
                                     <div onclick="chat2()" class="myMessageInfo">Dimples: You...</div>
                                     <div onclick="chat3()" class="myMessageInfo">Natpu:Da....</div>
                                     <!-- <div class="myMessageFlex" style="color: aliceblue">aioew</div> -->
@@ -82,17 +82,17 @@ Note that, this web-base aplication have features such as
 
 
                             <!-- Part 5 starts here -->
-                                <div id="timerScreen" class="flex-column  justify-content-start align-item-center">
-                                    <div onclick="" class="d-flex flex-row justify-content-center " id="clockdiv">
+                                <div id="timerScreen" class="flex-column  justify-content-center align-item-center">
+                                    <div  class="d-flex flex-row justify-content-center " id="clockdiv">
                                         
                                             <div class="d-flex flex-column justify-content-center align-item-center" id="hours">
-                                                00 :
+                                                00:
                                                 <!-- <div id="hourTitle" class="smalltext">Minute</div> -->
                                             </div>
                                         
                                         
                                             <div class="d-flex flex-column justify-content-center align-item-center" id="minute">
-                                                00 :
+                                                00:
                                                 <!-- <div id="minuteTitle" class="smalltext">Second</div> -->
                                             </div>
                                         
@@ -104,11 +104,11 @@ Note that, this web-base aplication have features such as
                                         
                                     </div> 
                                     <div class="d-flex flex-row align-item-center" id="timerButtons">
-                                        <div id="startButton" class="col">
+                                        <div onclick="add()" id="startButton" class="col">
                                             <i class="fas fa-play"></i>
                                         </div>
                                         
-                                        <div id="pauseButton" class="col">
+                                        <div onclick="stopTimer()" id="pauseButton" class="col">
                                             <i class="fas fa-pause"></i>
                                         </div>
 
