@@ -19,7 +19,7 @@ function screen(){
     document.getElementById('mes2').style.display = 'none';
     document.getElementById('mes3').style.display = 'none';
     document.getElementById('timerScreen').style.display = 'none';
-    initialDisplay();
+    // initialDisplay();
 }
 function initialDisplay(){
     
@@ -66,8 +66,8 @@ function music(){
 }
 function timer(){
     document.getElementById('iconPage').style.display="none";
-    document.getElementById('notificationBar').innerHTML  = "Timer";
-    document.getElementById('timerScreen').style.display="block";
+    
+    t = setTimeout(add, 10);
 }
 function chat1(){
     screen();
@@ -101,51 +101,70 @@ function chat3(){
 }
 function timerScr(){
     screen();
-    console.log('her');
+    document.getElementById('notificationBar').innerHTML  = "Timer";
     document.getElementById('iconPage').style.display = 'none';
     document.getElementById('timerScreen').style.display = 'flex';
 }
 
 
 
-    let h = document.getElementsByClassName('hours')[0];
-    let m = document.getElementById('minute');
-    let s = document.getElementById('second');
-    // let start = document.getElementById('start');
-    // let stop = document.getElementById('stop');
-    // let clear = document.getElementById('clear');
-    let seconds = 0, minutes = 0, hours = 0;
-    let t;
-    function add() {
-        document.getElementById('startButton').style.display = 'none';
-        document.getElementById('pauseButton').style.display = 'block';
-    seconds++;
-    if (seconds >= 60) {
-        seconds = 0;
-        minutes++;
-        if (minutes >= 60) {
-            minutes = 0;
-            hours++;
-        }
-
+let h = 0;
+let m = 0;
+let s = 0;
+// let start = document.getElementById('start');
+// let stop = document.getElementById('stop');
+// let clear = document.getElementById('clear');
+let seconds = 0, minutes = 0, hours = 0;
+let t;
+function add() {
+    document.getElementById('startButton').style.visibility = 'hidden';
+    document.getElementById('pauseButton').style.visibility = 'visible';
+seconds++;
+if (seconds >= 60) {
+    seconds = 0;
+    minutes++;
+    if (minutes >= 60) {
+        minutes = 0;
+        hours++;
     }
-    timer();
-    h = hours ? (hours > 9 ? hours : "0" + hours) : "00";
-    m = minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00";
-    s = seconds > 9 ? seconds : "0" + seconds;
-    // console.log(s);
 
-    
-    document.getElementById('hours').innerHTML=h+":";
-    document.getElementById('minute').innerHTML=m+":";
-    document.getElementById('second').innerHTML=s;
 }
-function timer() {
-    t = setTimeout(add, 10);
+timer();
+h = hours ? (hours > 9 ? hours : "0" + hours) : "00";
+m = minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00";
+s = seconds > 9 ? seconds : "0" + seconds;
+// console.log(s);
+
+
+document.getElementById('hours').innerHTML=h+":";
+document.getElementById('minute').innerHTML=m+":";
+document.getElementById('second').innerHTML=s;
+
+let reset =  document.getElementById('resetButton');
+
+reset.onclick = function(){
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+    h = "00";
+    m = "00";
+    s = "00";
+    document.getElementById('hours').innerText = "00:";
+    document.getElementById('minute').innerText = "00:";
+    document.getElementById('second').innerText = "00";
 }
+
+let lap =  document.getElementById('lap');
+let laps =  document.getElementById('laps'); 
+
+lap.onclick = function() {
+    laps.innerHTML += "<li>" + h + ":"+  m +":"+  s + "</li>";
+  }
+}
+// function timer() {
+// }
 function stopTimer(){
-    document.getElementById('pauseButton').style.display = 'none';
-    document.getElementById('startButton').style.display = 'block';
+    document.getElementById('pauseButton').style.visibility = 'hidden';
+    document.getElementById('startButton').style.visibility = 'visible';
+    clearTimeout(t);
 }
-
-
