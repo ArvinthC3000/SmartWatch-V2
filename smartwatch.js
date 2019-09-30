@@ -111,9 +111,6 @@ function timerScr(){
 let h = 0;
 let m = 0;
 let s = 0;
-// let start = document.getElementById('start');
-// let stop = document.getElementById('stop');
-// let clear = document.getElementById('clear');
 let seconds = 0, minutes = 0, hours = 0;
 let t;
 function add() {
@@ -133,7 +130,6 @@ timer();
 h = hours ? (hours > 9 ? hours : "0" + hours) : "00";
 m = minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00";
 s = seconds > 9 ? seconds : "0" + seconds;
-// console.log(s);
 
 
 document.getElementById('hours').innerHTML=h+":";
@@ -161,8 +157,7 @@ lap.onclick = function() {
     laps.innerHTML += "<li>" + h + ":"+  m +":"+  s + "</li>";
   }
 }
-// function timer() {
-// }
+
 function stopTimer(){
     document.getElementById('pauseButton').style.visibility = 'hidden';
     document.getElementById('startButton').style.visibility = 'visible';
