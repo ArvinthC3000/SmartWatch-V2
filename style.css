@@ -1,5 +1,4 @@
 .main{
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
@@ -26,12 +25,10 @@
     grid-template-rows: 1.5fr 1.75fr 3.5fr 1.75fr 1.5fr;
 }
 .strip-top{
-    /* border: 1px solid red; */
     margin: 0%;
     padding: 0 20%;
 }
 .strip-bottom{
-    /* border: 1px solid red; */
     margin: 0%;
     padding: 0 20%;
 }
@@ -71,7 +68,6 @@
     width: 100%;
     height: 75%;
     background-color: black;
-    /* margin-top: 50px; */
     
     align-items: flex-end
 }
@@ -81,14 +77,12 @@
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     background-color: black;
-    /* margin-bottom: 50px; */
 }
 #container{
     width: 100%;
     height: 100%;
     padding: 0;
     margin-top: -24.389px;
-    /* background-color: white; */
 }
 .my-container-fluid{
     height: 100%;
@@ -96,7 +90,6 @@
 }
 .myMessageFlex{
     display: flex;
-    /* background-color: #1890F0; */
     border : 2px solid red;
     margin: 10%;
     width: auto;
@@ -117,7 +110,6 @@
     margin-bottom: 5%;
 }
 #initialDisplay{
-    /* position: absolute; */
     background-color: white;
     width: 100%;
     padding: 0;
@@ -125,7 +117,6 @@
     text-align: center;
     font-size: 2em;
     justify-items: center;
-    /* width: 181%; */
     background-color: aliceblue;
     margin: 0;
 }
@@ -155,7 +146,6 @@
     display: none;
     width: 80%;
     height: 80%;
-    /* margin-block-end: -15% */
     color: aliceblue;
     
 }
@@ -163,7 +153,6 @@
     padding: 50% 0% 50% 0%;
     height: 206px;
     align-items: center;
-    /* margin-top: 24px; */
     font-size: 2em;
 }
 #goHome{
@@ -176,12 +165,6 @@
     height: 80%;
     border-radius: 10%;
 }
-/* #message{
-    display: none;
-    scroll-behavior: auto;
-    height: 80%;
-    border-radius: 10%;
-} */
 #mes1{
     display: none;
     width: 80%;
@@ -190,7 +173,6 @@
     border-radius: 5%;
     border:.5px solid aliceblue;
     height: auto;
-    /* margin-block-end: -15% */
     background-color: #1890F0;
 }
 #mes2{
@@ -202,7 +184,6 @@
     border:.5px solid 5%;
     border-color: aliceblue;
     height: auto;
-    /* margin-block-end: -15% */
     background-color: #1890F0;
 }
 #mes3{
@@ -214,7 +195,6 @@
     border: 5%;
     border-color: aliceblue;
     height: auto;
-    /* margin-block-end: -15% */
     background-color: #1890F0;
 }
 #timerScreen{
@@ -222,10 +202,8 @@
     height: 100%;
     justify-content: flex-end;
     justify-self: center;
-    /* background-color: #1890F0; */
     width: 80%;
     color: aliceblue;
-    /* grid-template-columns: .5fr 1fr; */
 }
 #clockdiv{
     display: flex;
