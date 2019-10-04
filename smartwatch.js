@@ -68,11 +68,7 @@ function music(){
     document.getElementById('notificationBar').innerHTML  = "Spotify";
     document.getElementById('spotify').style.display  = "flex";
 }
-function timer(){
-    document.getElementById('iconPage').style.display="none";
-    
-    t = setTimeout(add, 10);
-}
+
 function chat1(){
     screen();
     let n=0;
@@ -118,49 +114,54 @@ let t;
 function add() {
     document.getElementById('startButton').style.pointerEvents = 'none';
     document.getElementById('pauseButton').style.pointerEvents = 'all';
-seconds++;
-if (seconds >= 60) {
-    seconds = 0;
-    minutes++;
-    if (minutes >= 60) {
+    seconds++;
+    if (seconds >= 100) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+        }
+
+    }
+    timer();
+    h = hours ? (hours > 9 ? hours : "0" + hours) : "00";
+    m = minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00";
+    s = seconds > 9 ? seconds : "0" + seconds;
+
+
+    document.getElementById('hours').innerHTML=h+":";
+    document.getElementById('minute').innerHTML=m+":";
+    document.getElementById('second').innerHTML=s;
+
+    let reset =  document.getElementById('resetButton');
+
+    reset.onclick = function(){
+        hours = 0;
         minutes = 0;
-        hours++;
+        seconds = 0;
+        h = "00";
+        m = "00";
+        s = "00";
+        document.getElementById('hours').innerText = "00:";
+        document.getElementById('minute').innerText = "00:";
+        document.getElementById('second').innerText = "00";
     }
 
+    let lap =  document.getElementById('lap');
+    let laps =  document.getElementById('laps'); 
+
+
+
+
+    lap.onclick = function() {
+        laps.innerHTML += "<li>" + h + ":"+  m +":"+  s + "</li>";
+    }
 }
-timer();
-h = hours ? (hours > 9 ? hours : "0" + hours) : "00";
-m = minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00";
-s = seconds > 9 ? seconds : "0" + seconds;
-
-
-document.getElementById('hours').innerHTML=h+":";
-document.getElementById('minute').innerHTML=m+":";
-document.getElementById('second').innerHTML=s;
-
-let reset =  document.getElementById('resetButton');
-
-reset.onclick = function(){
-    hours = 0;
-    minutes = 0;
-    seconds = 0;
-    h = "00";
-    m = "00";
-    s = "00";
-    document.getElementById('hours').innerText = "00:";
-    document.getElementById('minute').innerText = "00:";
-    document.getElementById('second').innerText = "00";
-}
-
-let lap =  document.getElementById('lap');
-let laps =  document.getElementById('laps'); 
-
-
-
-
-lap.onclick = function() {
-    laps.innerHTML += "<li>" + h + ":"+  m +":"+  s + "</li>";
-  }
+function timer(){
+    document.getElementById('iconPage').style.display="none";
+    
+    t = setTimeout(add, 10);
 }
 
 function stopTimer(){
