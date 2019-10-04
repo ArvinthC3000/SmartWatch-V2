@@ -19,6 +19,7 @@ function screen(){
     document.getElementById('mes2').style.display = 'none';
     document.getElementById('mes3').style.display = 'none';
     document.getElementById('timerScreen').style.display = 'none';
+    document.getElementById('back').style.visibility = 'hidden';
     // initialDisplay();
 }
 function initialDisplay(){
@@ -56,6 +57,10 @@ function message(){
     document.getElementById('iconPage').style.display="none";
     document.getElementById("messageScreen").style.display = "flex";
     document.getElementById('notificationBar').innerHTML = "Messages";
+    document.getElementById('mes1').style.display = 'none';
+    document.getElementById('mes2').style.display = 'none';
+    document.getElementById('mes3').style.display = 'none';
+    document.getElementById('back').style.visibility = 'hidden';
 
 
 }
@@ -77,6 +82,7 @@ function chat1(){
     document.getElementById('messageScreen').style.display = 'none';
     document.getElementById('mes1').style.display = 'block';
     document.getElementById('mes1').innerHTML = messageArray[0].sender+':'+messageArray[0].message;
+    document.getElementById('back').style.visibility = 'visible';
     
 }
 function chat2(){
@@ -87,7 +93,7 @@ function chat2(){
     document.getElementById('messageScreen').style.display = 'none';
     document.getElementById('mes2').style.display = 'block';
     document.getElementById('mes2').innerHTML = messageArray[n].sender+':'+messageArray[n].message;
-    
+    document.getElementById('back').style.visibility = 'visible';
 }
 function chat3(){
     screen();
@@ -97,7 +103,7 @@ function chat3(){
     document.getElementById('messageScreen').style.display = 'none';
     document.getElementById('mes3').style.display = 'block';
     document.getElementById('mes3').innerHTML = messageArray[n].sender+':'+messageArray[n].message;
-    
+    document.getElementById('back').style.visibility = 'visible';
 }
 function timerScr(){
     screen();

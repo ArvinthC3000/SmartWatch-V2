@@ -253,3 +253,13 @@ ul {
     list-style : none;
     color: #1890F0;
 }
+#back{
+    visibility: hidden;
+    height: 10%;
+    width:100%;
+    color: #1890F0;
+    margin-top: -25px;
+    padding-left: 10%;
+    font-size: 1.5em;
+    /* visibility: hidden; */
+}
