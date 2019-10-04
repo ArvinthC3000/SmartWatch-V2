@@ -20,7 +20,6 @@ function screen(){
     document.getElementById('mes3').style.display = 'none';
     document.getElementById('timerScreen').style.display = 'none';
     document.getElementById('back').style.visibility = 'hidden';
-    // initialDisplay();
 }
 function initialDisplay(){
     
@@ -77,7 +76,6 @@ function timer(){
 function chat1(){
     screen();
     let n=0;
-    console.log(messageArray[0].message);
     document.getElementById('iconPage').style.display = 'none';
     document.getElementById('messageScreen').style.display = 'none';
     document.getElementById('mes1').style.display = 'block';
@@ -88,7 +86,6 @@ function chat1(){
 function chat2(){
     screen();
     let n=1;
-    console.log(messageArray[1].message);
     document.getElementById('iconPage').style.display = 'none';
     document.getElementById('messageScreen').style.display = 'none';
     document.getElementById('mes2').style.display = 'block';
@@ -98,7 +95,6 @@ function chat2(){
 function chat3(){
     screen();
     let n=2;
-    console.log(messageArray[2].message);
     document.getElementById('iconPage').style.display = 'none';
     document.getElementById('messageScreen').style.display = 'none';
     document.getElementById('mes3').style.display = 'block';
@@ -158,6 +154,9 @@ reset.onclick = function(){
 
 let lap =  document.getElementById('lap');
 let laps =  document.getElementById('laps'); 
+
+
+
 
 lap.onclick = function() {
     laps.innerHTML += "<li>" + h + ":"+  m +":"+  s + "</li>";
