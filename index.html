@@ -106,8 +106,8 @@ Note that, this web-base aplication have features such as
                                             <i class="fas fa-play"></i>
                                         </div>
                                         
-                                        <div onclick="stopTimer()" id="pauseButton" class="col">
-                                            <i class="fas fa-pause"></i>
+                                        <div onclick="stopTimer()" id="pauseButton" class="col" disabled>
+                                            <i class="fas fa-pause" ></i>
                                         </div>
 
                                         <div id="resetButton" class="col">
@@ -120,7 +120,7 @@ Note that, this web-base aplication have features such as
                                     </div>
                                     <div >
                                         <ul id="lapTime">
-                                            <li id="laps"><p style="opacity: 0.5; color:white">Laps</p></li>
+                                            <li id="laps"><p style="opacity: 0.3; color:white">Laps</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -133,8 +133,9 @@ Note that, this web-base aplication have features such as
                     
                     <div class="container-fluid" >
                         <div class="row">
-                            <div onclick="screen()" id="goHome" class="col-4 px-2"><i class="fas fa-home"></i></div>
-                            <div class="col-3"> </div>
+                            <div class="col-5"> </div>
+                            <div onclick="screen()" id="goHome" class="col-2 px-2"><i class="fas fa-home"></i></div>
+                            <div class="col-5"> </div>
                         </div>
                     </div>
                 </div>

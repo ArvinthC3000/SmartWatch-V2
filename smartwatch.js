@@ -114,8 +114,8 @@ let s = 0;
 let seconds = 0, minutes = 0, hours = 0;
 let t;
 function add() {
-    document.getElementById('startButton').style.visibility = 'hidden';
-    document.getElementById('pauseButton').style.visibility = 'visible';
+    document.getElementById('startButton').style.pointerEvents = 'none';
+    document.getElementById('pauseButton').style.pointerEvents = 'all';
 seconds++;
 if (seconds >= 60) {
     seconds = 0;
@@ -159,7 +159,7 @@ lap.onclick = function() {
 }
 
 function stopTimer(){
-    document.getElementById('pauseButton').style.visibility = 'hidden';
-    document.getElementById('startButton').style.visibility = 'visible';
+    document.getElementById('pauseButton').style.pointerEvents = 'none';
+    document.getElementById('startButton').style.pointerEvents = 'all';
     clearTimeout(t);
 }
