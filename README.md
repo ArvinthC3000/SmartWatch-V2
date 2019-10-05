@@ -7,10 +7,10 @@
 Note that, this web-base aplication have features such as
                     
 -Message/Chat box                    
--Spotify Music player                    
--Timer(underdevelopment)                    
+-Spotify Music player using iFrame                    
+-Timer with laps                    
 
 ### Tools
                     
--JS ES5
--Bootstrap
+-JS ES5    
+-Bootstrap    
