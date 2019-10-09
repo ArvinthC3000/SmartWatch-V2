@@ -8,6 +8,7 @@ let messageArray =[
 
 function screen(){
     document.getElementById('initialDisplay').style.display = 'none';
+    document.getElementById('blink').style.visibility = 'hidden'; 
     document.getElementById('iconPage').style.display = 'block';
     document.getElementById('notificationBar').style.visibility = "visible";
     document.getElementById('notificationBar').innerHTML  = "Menu";
@@ -19,7 +20,7 @@ function screen(){
     document.getElementById('mes2').style.display = 'none';
     document.getElementById('mes3').style.display = 'none';
     document.getElementById('timerScreen').style.display = 'none';
-    document.getElementById('back').style.visibility = 'hidden';
+    document.getElementById('back').style.visibility = 'hidden';   
 }
 function initialDisplay(){
     
