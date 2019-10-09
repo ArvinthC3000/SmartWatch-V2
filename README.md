@@ -8,7 +8,11 @@ Note that, this web-base aplication have features such as
                     
 -Message/Chat box                    
 -Spotify Music player using iFrame                    
--Timer with laps                    
+-Timer with laps   
+
+### Layout
+![Layout](/images/SmartWatch.png)
+
 
 ### Tools
                     
