@@ -1,6 +1,6 @@
 # SmartWatch
 
->In this repository, a web-based SmartWatch had been designed using Bootstrap, Flex and various tools
+In this repository,I have designed a web-based SmartWatch using various tools including Bootstrap, Flex and so on. As a progress in my learning process, I've learned some new css attributes and how to manipulate that in Javascript.
 
 ### Features
                     
