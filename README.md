@@ -16,5 +16,5 @@ Note that, this web-base aplication have features such as
 
 ### Tools
                     
--JS ES5    
--Bootstrap    
+- JS ES5    
+- Bootstrap    
